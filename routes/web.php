@@ -23,7 +23,7 @@ Route::get('/', function () {
 Route::get('/', HomePage::class);
 Route::get('/categories', CategoriesPage::class);
 Route::get('/products', ProductsPage::class);
-Route::get('/product/{product}', ProductDetailPage::class);
+Route::get('/product/{slug}', ProductDetailPage::class);
 
 Route::get('/cart', CartPage::class);
 Route::get('/checkout', CheckoutPage::class);
